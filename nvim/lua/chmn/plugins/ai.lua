@@ -55,9 +55,9 @@ local copilot = {
 local codeium = {
 	"Exafunction/codeium.vim",
 	event = "VeryLazy",
-	enabled = false,
+	enabled = true,
 	config = function()
-		vim.keymap.set("i", "<C-;>", function()
+		vim.keymap.set("i", "<Tab>", function()
 			return vim.fn["codeium#Accept"]()
 		end, { expr = true, silent = true, noremap = true })
 		vim.keymap.set("i", "<c-,>", function()
@@ -78,7 +78,7 @@ local codeium = {
 local neoCodeium = {
 	"monkoose/neocodeium",
 	event = "VeryLazy",
-	enabled = true,
+	enabled = false,
 	config = function()
 		local neocodeium = require("neocodeium")
 		neocodeium.setup({
