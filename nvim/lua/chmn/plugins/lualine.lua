@@ -49,7 +49,7 @@ end
 M.config = function()
 	local c = require("nord.colors").palette
 
-	local theme = require("lualine.themes.gruvbox-material")
+	local theme = require("lualine.themes.catppuccin-latte")
 	theme.terminal = {
 		a = { fg = c.polar_night.bright, bg = c.aurora.green },
 	}
