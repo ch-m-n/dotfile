@@ -6,7 +6,7 @@ require("lazy").setup("chmn.plugins", {
 		-- install missing plugins on startup. This doesn't increase startup time.
 		missing = true,
 		-- try to load one of these colorschemes when starting an installation during startup
-		colorscheme = { "catppuccin-latte" },
+		colorscheme = { "gruvbox-material" },
 	},
 	rocks = {
 		hererocks = false,
@@ -75,4 +75,5 @@ require("lazy").setup("chmn.plugins", {
 })
 
 vim.cmd 'Neotree'
-vim.cmd.colorscheme('catppuccin-latte')
+--vim.o.background = 'light'
+vim.cmd.colorscheme('gruvbox-material')
