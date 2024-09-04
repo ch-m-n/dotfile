@@ -133,23 +133,32 @@ exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
 #}
 
 # colour of border, background, text, indicator, and child_border
-client.focused #d12f2c #263640 #93a1a1 #696ebf #2587cc1
-client.focused_inactive #263640 #b08500 #93a1a1 #263640 #263640
-client.unfocused #263640 #b08500 #93a1a1 #263640 #263640
-client.urgent #263640 #b08500 #93a1a1 #263640 #263640
-client.placeholder #263640 #b08500 #93a1a1 #263640 #263640
-client.background #263640
+#client.focused #263640 #263640 #93a1a1 #696ebf #2587cc1
+#client.focused_inactive #263640 #F97300 #0C0C0C #263640 #263640
+#client.unfocused #263640 #F97300 #93a1a1 #263640 #263640
+#client.urgent #263640 #F97300 #93a1a1 #263640 #263640
+#client.placeholder #263640 #F97300 #93a1a1 #263640 #263640
+#client.background #263640
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #f97300 #f97300 #ffffff #2e9ef4   #f97300
+client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+client.background       #263640
 
 # window rules, you can find the window class using xprop
 for_window [class=Eog|Sxiv|feh|mpv|Vlc|File-roller|Xarchiver] floating enable
 for_window [class=Eog|Sxiv|feh|mpv|Vlc|File-roller|Xarchiver] focus
-for_window [class=".*"] border pixel 2
+#for_window [class=".*"] border pixel 2
 hide_edge_borders smart
 gaps inner 12
 smart_gaps on
 
 # open on startup
-exec_always --no-startup-id feh --bg-fill ~/Pictures/download.jpeg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.png
 
 # open discord
 exec --no-startup-id discord
