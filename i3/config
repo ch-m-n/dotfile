@@ -141,7 +141,7 @@ exec_always --no-startup-id sh $HOME/.config/polybar/launch.sh
 #client.background #263640
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #f97300 #f97300 #ffffff #2e9ef4   #f97300
+client.focused          #f97300 #f97300 #0C0C0C #2e9ef4   #f97300
 client.focused_inactive #5f676a #5f676a #ffffff #484e50   #5f676a
 client.unfocused        #222222 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000

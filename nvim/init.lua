@@ -12,9 +12,9 @@ if not vim.loop.fs_stat(lazypath) then
 	})
 end
 vim.opt.runtimepath:prepend(lazypath)
-vim.opt.mouse = 'a'
+--vim.opt.mouse = 'a'
 
 require("chmn.options")
 require("chmn.mappings")
-require("chmn.autocmd")
+--require("chmn.autocmd")
 require("chmn.lazy_plugin")
