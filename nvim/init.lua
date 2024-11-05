@@ -14,7 +14,7 @@ end
 vim.opt.runtimepath:prepend(lazypath)
 --vim.opt.mouse = 'a'
 
-require("chmn.options")
-require("chmn.mappings")
---require("chmn.autocmd")
-require("chmn.lazy_plugin")
+require("oros.options")
+require("oros.mappings")
+require("oros.autocmd")
+require("oros.lazy_plugin")

@@ -1,4 +1,4 @@
-require("lazy").setup("chmn.plugins", {
+require("lazy").setup("oros.plugins", {
 	defaults = {
 		lazy = true,
 	},
@@ -6,7 +6,7 @@ require("lazy").setup("chmn.plugins", {
 		-- install missing plugins on startup. This doesn't increase startup time.
 		missing = true,
 		-- try to load one of these colorschemes when starting an installation during startup
-		colorscheme = { "gruvbox-material" },
+		colorscheme = { "catppuccin-latte" },
 	},
 	rocks = {
 		hererocks = false,
@@ -76,4 +76,4 @@ require("lazy").setup("chmn.plugins", {
 
 vim.cmd 'Neotree'
 --vim.o.background = 'light'
-vim.cmd.colorscheme('gruvbox-material')
+vim.cmd.colorscheme('catppuccin-latte')

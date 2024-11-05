@@ -202,6 +202,7 @@ local iswap = {
 }
 local rainbow = {
 	"HiPhish/rainbow-delimiters.nvim",
+	branch = "fix-highlighting",
 	enabled = true,
 	event = { "BufReadPost", "BufNewFile" },
 	config = function()
