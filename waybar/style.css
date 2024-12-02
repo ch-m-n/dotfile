@@ -30,7 +30,8 @@
 }
 
 window#waybar {
-  background:  @bg_main;
+  /* background:  @bg_main;*/
+  background:  transparent;
   border-top: 1px solid @border_main;
   color: @content_main;
 }
@@ -64,7 +65,7 @@ tooltip label{
 	margin-left: 1.5px;
 }
 #workspaces button {
-  padding: 3px;
+  padding: 3px 18px;
   color: @content_inactive;
 	transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -149,7 +150,7 @@ tooltip label{
 #tray > widget {
 	transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-#tray > widget:hover {
+#tray > wiget:hover {
 	background: @bg_hover;
 }
 
