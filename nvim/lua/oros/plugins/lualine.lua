@@ -49,7 +49,7 @@ end
 M.config = function()
 	local c = require("nord.colors").palette
 
-	local theme = require("lualine.themes.catppuccin")
+	local theme = require("lualine.themes.horizon")
 	theme.terminal = {
 		a = { fg = c.polar_night.bright, bg = c.aurora.green },
 	}
@@ -90,7 +90,9 @@ M.config = function()
 					"dapui_breakpoints",
 					"dapui_scopes",
 					"dapui_colsoles",
-					"",
+					"toggleterm",
+					"noice",
+					"rainbow_delimiters",
 				},
 			},
 			always_divide_middle = true,

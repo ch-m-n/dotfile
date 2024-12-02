@@ -4,6 +4,6 @@ return {
   priority = 1000,
   config = function()
     require('catppuccin').setup()
-    vim.cmd.colorscheme 'catppuccin-latte'
+    vim.cmd.colorscheme 'catppuccin-frappe'
   end,
 }
