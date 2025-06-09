@@ -6,7 +6,7 @@ require("lazy").setup("oros.plugins", {
 		-- install missing plugins on startup. This doesn't increase startup time.
 		missing = true,
 		-- try to load one of these colorschemes when starting an installation during startup
-		colorscheme = { "horizon" },
+		colorscheme = { "gruvbox-material" },
 	},
 	rocks = {
 		hererocks = false,
@@ -77,4 +77,4 @@ require("lazy").setup("oros.plugins", {
 vim.cmd 'Neotree'
 --vim.o.background = 'light'
 vim.o.background = 'dark'
-vim.cmd.colorscheme('horizon')
+vim.cmd.colorscheme('gruvbox-material')
