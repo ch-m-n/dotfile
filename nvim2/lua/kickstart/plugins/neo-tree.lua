@@ -20,7 +20,7 @@ return {
     open_files_do_not_replace_types = { 'terminal', 'Trouble', 'trouble', 'qf', 'Outline' },
     filesystem = {
       window = {
-        position = 'right',
+        position = 'left',
         width = 30,
         mappings = {
           ['\\'] = 'close_window',

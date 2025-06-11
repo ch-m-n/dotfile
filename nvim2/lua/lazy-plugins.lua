@@ -33,7 +33,7 @@ require('lazy').setup({
 
   require 'kickstart/plugins/conform',
 
-  require 'kickstart.plugins.catppuccin',
+  -- require 'kickstart.plugins.catppuccin',
   require 'kickstart.plugins.tokyonight',
   require 'kickstart.plugins.tmuxnavigation',
 
