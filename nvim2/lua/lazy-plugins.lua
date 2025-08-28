@@ -34,7 +34,7 @@ require('lazy').setup({
   require 'kickstart/plugins/conform',
 
   -- require 'kickstart.plugins.catppuccin',
-  require 'kickstart.plugins.Horizon',
+  require 'kickstart.plugins.gruvbox-material',
   require 'kickstart.plugins.tmuxnavigation',
 
   -- require 'kickstart/plugins/todo-comments',
