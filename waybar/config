@@ -22,14 +22,25 @@
         "pulseaudio",
         "network",
         "battery",
+        "backlight",
         "hyprland/language",
         "clock"
     ],
+    "backlight": {
+        "device": "auto", // Or the device from `light -L`
+        "format": " {icon} {percent}% ",
+        "format-icons": ["", ""], // Example icons
+        "on-scroll-up": "light -A 1.1",
+        "on-scroll-down": "light -U 0.9",
+        "min": 0,
+        "max": 100
+    },
     "hyprland/language": {
         "format": "  {}  ",
         "format-en": "ENG",
-        "format-vn": "VN",
+        "format-vn": "VNM",
         //"format-ru": "РУС"
+        "format-de": "DEU"
     },
     "hyprland/workspaces": {
         "icon-size": 32,
@@ -114,11 +125,11 @@
         "format-ethernet": "  ",
         "format-disconnected": "󰌙",
         "format-icons": [
-            "󰤯  ",
-            "󰤟  ",
-            "󰤢  ",
-            "󰤢  ",
-            "󰤨  "
+            "󰤯",
+            "󰤟",
+            "󰤢",
+            "󰤢",
+            "󰤨"
         ]
     },
     "battery": {
@@ -127,16 +138,16 @@
             "warning": 30,
             "critical": 20
         },
-        "format": "{icon} {capacity}%",
-        "format-charging": "{icon} {capacity}%",
-        "format-plugged": "{icon} {capacity}%",
+        "format": "{icon}{capacity}%",
+        "format-charging": "{icon}{capacity}%",
+        "format-plugged": "{icon}{capacity}%",
         "format-alt": "{time} {icon}",
         "format-icons": [
-            "   ", // Icon: battery-full
-            "   ", // Icon: battery-three-quarters
-            "   ", // Icon: battery-half
-            "   ", // Icon: battery-quarter
-            "   "  // Icon: battery-empty
+            "  ", // Icon: battery-full
+            "  ", // Icon: battery-three-quarters
+            "  ", // Icon: battery-half
+            "  ", // Icon: battery-quarter
+            "  "  // Icon: battery-empty
         ]
     },
     "pulseaudio": {
