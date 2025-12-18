@@ -6,7 +6,7 @@ trap "killall waybar" EXIT
 
 while true; do
     killall waybar 2> /dev/null
-    waybar &
+    GDK_BACKEND=wayland waybar &
     inotifywait -e create,modify $CONFIG_FILES
     killall waybar
 done

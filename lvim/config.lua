@@ -13,6 +13,7 @@ lvim.builtin.lualine.sections.lualine_y = {
   components.spaces,
   components.location
 }
+lvim.builtin.nvimtree.active = false
 
 vim.optclipboard = "unnamedplus"
 lvim.format_on_save.enabled = true
@@ -26,5 +27,5 @@ lvim.plugins = {
     end
   },
   { "Exafunction/codeium.vim", event = "BufEnter" },
-  -- { "foxbunny/vim-amber",      event = "BufEnter", config = function() vim.cmd("colorscheme amber") end },
+  { "foxbunny/vim-amber",      event = "BufEnter", config = function() vim.cmd("colorscheme amber") end },
 }
