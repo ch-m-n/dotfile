@@ -3,7 +3,7 @@
 -- Video Tutorials: https://www.youtube.com/watch?v=sFA9kX-Ud_c&list=PLhoH5vyxr6QqGu0i7tt_XoVK9v-KvZ3m6
 -- Forum: https://www.reddit.com/r/lunarvim/
 -- Discord: https://discord.com/invite/Xb9B4Ny
-lvim.colorscheme = "everforest"
+lvim.colorscheme = "dayfox"
 -- lvim.builtin.lualine.style = "default"
 
 local components = require("lvim.core.lualine.components")
@@ -13,6 +13,16 @@ lvim.builtin.lualine.sections.lualine_y = {
   components.spaces,
   components.location
 }
+
+lvim.builtin.lualine.options.section_separators = {
+  left = "",
+  right = "",
+}
+lvim.builtin.lualine.options.component_separators = {
+  left = "",
+  right = "",
+}
+
 lvim.builtin.nvimtree.active = true
 
 vim.optclipboard = "unnamedplus"
@@ -40,6 +50,10 @@ lvim.plugins = {
         close_if_last_window = true,
         window = {
           width = 30,
+        },
+        update_focused_file = {
+          enable = true,
+          update_root = true,
         },
         buffers = {
           follow_current_file = true,
@@ -112,5 +126,8 @@ lvim.plugins = {
         -- Your config here
       })
     end,
+  },
+  {
+    "EdenEast/nightfox.nvim",
   }
 }
