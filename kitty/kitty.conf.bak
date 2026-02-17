@@ -35,7 +35,7 @@
 
 
 # BEGIN_KITTY_THEME
-# Dayfox
+# Adventure Time
 include current-theme.conf
 # END_KITTY_THEME
 macos_option_as_alt yes

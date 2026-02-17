@@ -8,6 +8,8 @@ lvim.colorscheme = "dayfox"
 
 local components = require("lvim.core.lualine.components")
 
+vim.opt.guicursor = "n-v-c:block-blinkon1000,i-ci-ve:ver25-blinkon1000"
+
 lvim.builtin.lualine.sections.lualine_a = { "mode" }
 lvim.builtin.lualine.sections.lualine_y = {
   components.spaces,
@@ -15,17 +17,19 @@ lvim.builtin.lualine.sections.lualine_y = {
 }
 
 lvim.builtin.lualine.options.section_separators = {
-  left = "",
-  right = "",
+  left = "",
+  right = "",
 }
 lvim.builtin.lualine.options.component_separators = {
-  left = "",
-  right = "",
+  left = "",
+  right = "",
 }
 
 lvim.builtin.nvimtree.active = true
 
 vim.optclipboard = "unnamedplus"
+
+vim.opt.guicursor = "n-v-c:block-blinkon1000,i-ci-ve:ver25-blinkon1000"
 
 lvim.format_on_save.enabled = true
 
